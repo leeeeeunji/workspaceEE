@@ -8,6 +8,8 @@ public class GuestService {
 	public GuestService() throws Exception{
 		guestDao = new GuestDao();
 	}
+	
+	
 	/*
 	 * 방명록 리스트
 	 */

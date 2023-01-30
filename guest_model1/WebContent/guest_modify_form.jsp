@@ -1,3 +1,4 @@
+<%@page import="com.itwill.guest.GuestService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
@@ -9,6 +10,14 @@
  	3.GuestService객체 findByNo(guest_no) 메쏘드호출
  	4.Guest 데이타를 form의 input element의  value  속성에 출력
 */
+if(request.getMethod().equalsIgnoreCase("GET")) {
+	response.sendRedirect("guest_main.jsp");
+	return;
+}
+request.setCharacterEncoding("UTF-8");
+String noStr = request.getParameter("guest_no");
+GuestService guestService = new GuestService();
+
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>

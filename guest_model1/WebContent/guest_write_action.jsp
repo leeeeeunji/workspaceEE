@@ -9,4 +9,5 @@ GET방식이면 guest_main.jsp redirection
 	3.GuestService객체 insertGuest(Guest객체) 메쏘드호출
 	4.guest_list.jsp로 redirection
 */
+
 %>

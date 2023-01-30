@@ -12,8 +12,16 @@ GET방식요청인경우에는 address_main.jsp로 redirection
   3.받은파라메타로 AddressService.selectByNo()메쏘드실행 
   4.반환받은 Address객체를 사용해서 클라이언트로 응답(수정폼 보여주기)
  */
- 
- 
+if(request.getMethod().equalsIgnoreCase("GET")) {
+	response.sendRedirect("address_main.jsp");
+	return;
+}
+
+request.setCharacterEncoding("UTF-8");
+String noStr = request.getParameter("no");
+AddressService addressService = new AddressService();
+Address updateAddress = addressService.findByNo(Integer.parseInt(noStr));
+
 %>    
 
 

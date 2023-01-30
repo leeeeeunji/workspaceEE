@@ -1,5 +1,5 @@
 <%@page import="com.itwill.guest.Guest"%>
-<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.List"%>
 <%@page import="com.itwill.guest.GuestService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -14,7 +14,7 @@
 	  */
 	request.setCharacterEncoding("UTF-8");
  	GuestService guestService = new GuestService();
- 	ArrayList<Guest> guestList = guestService.findAll();
+ 	List<Guest> guestList = guestService.findAll();
  	
  %>
  
@@ -71,22 +71,6 @@
 										<td width=300 align=center bgcolor="E6ECDE">제목</td>
 										<td width=120 align=center bgcolor="E6ECDE">이름</td>
 										<td width=120 align=center bgcolor="E6ECDE">날짜</td>
-									</tr>
-
-									<tr>
-										<td width=50 align=center bgcolor="ffffff" height="20">43</td>
-										<td width=300 bgcolor="ffffff" style="padding-left: 10"><a
-											href="guest_view.jsp?guest_no=43" class="user"> hj </a></td>
-										<td width=120 align=center bgcolor="ffffff">dfdf</td>
-										<td width=120 align=center bgcolor="ffffff">2015-03-19</td>
-									</tr>
-
-									<tr>
-										<td width=50 align=center bgcolor="ffffff" height="20">41</td>
-										<td width=300 bgcolor="ffffff" style="padding-left: 10"><a
-											href="guest_view.jsp?guest_no=41" class="user"> sdf </a></td>
-										<td width=120 align=center bgcolor="ffffff">df</td>
-										<td width=120 align=center bgcolor="ffffff">2015-03-19</td>
 									</tr>
 									<%for(Guest guest:guestList) { %>
 									<tr>
