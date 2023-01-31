@@ -13,14 +13,14 @@
  *  3.AddressService객체 selectByNo(no) 메쏘드호출
  *  4.Address객체 출력
  */
-  request.setCharacterEncoding("UTF-8");
-  String noStr=request.getParameter("no");	
-  if(noStr==null||noStr.equals("")){
-	  response.sendRedirect("address_main.jsp");
-	  return;
-  }
-  AddressService addressService = new AddressService();
-  Address address=addressService.findByNo(Integer.parseInt(noStr));
+ request.setCharacterEncoding("UTF-8");
+ String noStr=request.getParameter("no");	
+ if(noStr==null||noStr.equals("")){
+	 response.sendRedirect("address_main.jsp");
+	 return;
+ }
+ AddressService addressService = new AddressService();
+ Address address=addressService.findByNo(Integer.parseInt(noStr));
 %>    
 <!DOCTYPE html>
 <html>

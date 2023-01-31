@@ -20,8 +20,9 @@
  String name = request.getParameter("name");
  String phone = request.getParameter("phone");
  String address = request.getParameter("address");
+ Address newAddress = new Address(0, name, phone, address);
  AddressService addressService = new AddressService();
- addressService.insert(new Address(0, name, phone, address));
+ addressService.insert(newAddress);
  
  response.sendRedirect("address_list.jsp");
  

@@ -25,8 +25,9 @@ String no = request.getParameter("no");
 String name = request.getParameter("name");
 String phone= request.getParameter("phone");
 String address = request.getParameter("address");
+Address updateAddress = new Address(Integer.parseInt(no), name, phone, address);
 AddressService addressService = new AddressService();
-addressService.update(new Address(Integer.parseInt(no), name, phone, address));
+addressService.update(updateAddress);
 
 response.sendRedirect("address_detail.jsp");
  
