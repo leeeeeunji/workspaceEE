@@ -42,7 +42,7 @@ List<Address> addressList = addressService.findAll();
 			<%
 			
 			for(Address address:addressList) {
-				out.println("<li><a href = 'address_detail.jsp?no ="+address.getNo()+"'>["+address.getNo()+"]"+address.getName()+"</a></li>");
+				out.println("<li><a href='address_detail.jsp?no="+address.getNo()+"'>["+address.getNo()+"]"+address.getName()+"</a></li>");
 				
 			}
 			
