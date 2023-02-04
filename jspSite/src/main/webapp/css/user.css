@@ -1,0 +1,66 @@
+@charset "UTF-8";
+	/*
+	tag selector
+	*/
+	body{
+		background-color: pink;
+	}
+	h3{
+		text-align: center;
+	}
+	form{
+		width: 450px;
+		margin: 0px auto 0px auto;
+		background: white;
+		border: 1px solid #bbbbbb;
+	}
+	th{
+		background: #dddddd;
+		font-size: 9pt;
+		border: 1px solid #bbbbbb;
+	}
+	/*
+	class selector
+	*/
+	.TXTFLD{
+		border-width: 1px;
+		border-style: solid;
+		border-color: #bbbbbb;
+	}
+	.TXTFLD1{
+		border-width: 1px;
+		border-style: solid;
+		border-color: dodgerblue;
+		color : dodgerblue;
+	}
+	
+	/*
+	id selector
+	*/
+	#jointbl{
+		background-color: #eeeeee;
+		width: 450px;
+	}
+	#first-tr{
+		color: maroon;
+	}
+	#jointbl input[type=submit]{
+		background: dodgerblue;
+		border-color: dodgerblue;
+		color: #ffffff;
+	}
+	#jointbl input[type=submit]:hover{
+		background: #ffffff;
+		border-color: #ffffff;
+		color: dodgerblue;
+	}
+	#jointbl input[type=reset]{
+		background: dodgerblue;
+		border-color: dodgerblue;
+		color: #ffffff;
+	}
+	#jointbl input[type=reset]:hover{
+		background: #ffffff;
+		border-color: #ffffff;
+		color: dodgerblue;
+	}

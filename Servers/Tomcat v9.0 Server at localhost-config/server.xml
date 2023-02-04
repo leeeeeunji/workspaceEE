@@ -152,7 +152,13 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
+<<<<<<< HEAD
       <Context docBase="test1" path="/test1" reloadable="true" source="org.eclipse.jst.jee.server:test1"/><Context docBase="jspSite" path="/jspSite" reloadable="true" source="org.eclipse.jst.jee.server:jspSite"/><Context docBase="servletSite" path="/servletSite" reloadable="true" source="org.eclipse.jst.jee.server:servletSite"/><Context docBase="htmlSite" path="/htmlSite" reloadable="true" source="org.eclipse.jst.jee.server:htmlSite"/><Context docBase="javascriptSite" path="/javascriptSite" reloadable="true" source="org.eclipse.jst.jee.server:javascriptSite"/><Context docBase="hmarket" path="/hmarket" reloadable="true" source="org.eclipse.jst.jee.server:hmarket"/><Context docBase="addressJspSite" path="/addressJspSite" reloadable="true" source="org.eclipse.jst.jee.server:addressJspSite"/><Context docBase="addressSite" path="/addressSite" reloadable="true" source="org.eclipse.jst.jee.server:addressSite"/></Host>
+=======
+        
+
+      <Context docBase="jspSite" path="/jspSite" reloadable="true" source="org.eclipse.jst.jee.server:jspSite"/><Context docBase="web-project-shop-complete" path="/web-project-shop-complete" reloadable="true" source="org.eclipse.jst.jee.server:web-project-shop-complete"/><Context docBase="web-project-shop-template" path="/web-project-shop-template" reloadable="true" source="org.eclipse.jst.jee.server:web-project-shop-template"/></Host>
+>>>>>>> branch 'master' of https://github.com/leeeeeunji/workspaceEE.git
     </Engine>
   </Service>
 </Server>

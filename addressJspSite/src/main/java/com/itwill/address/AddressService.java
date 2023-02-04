@@ -1,5 +1,7 @@
 package com.itwill.address;
 
+import java.util.List;
+
 /*
 AddressService객체
  	- 주소록 비즈니스로직(업무)을 수행하는 클래스
@@ -19,7 +21,7 @@ public class AddressService {
 	public Address findByNo(int no)throws Exception{
 		return addressDao.findByPrimaryKey(no);
 	}
-	public java.util.List<Address> selectAll()throws Exception{
+	public List<Address> findAll()throws Exception{
 		return addressDao.findAll();
 	}
 	public int update(Address updateAddress)throws Exception{
