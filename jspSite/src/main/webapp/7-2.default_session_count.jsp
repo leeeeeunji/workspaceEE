@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" session="false"%>
 <!-- 
-     <<요청시 JESSIONID쿠키존재안할때(최초요청시)>>
-         1.JESSIONID쿠키존재여부판단후 JESSIONID쿠키존재하지않으면
-            세션아이디 발행후 HttpSession 객체를 생성한후 세션아이디를설정반환
+     <<요청시 JESSIONID쿠키 존재 안할 때(최초 요청 시)>>
+         1.JESSIONID쿠키 존재여부 판단 후 JESSIONID쿠키 존재하지 않으면
+            세션 아이디 발행후 HttpSession 객체를 생성한후 세션아이디를설정반환
          2.HttpSession객체사용  
          3.이름JESSIONID,값은 발행한세션아이디값로생성한 쿠키객체(메모리저장)를 생성한후 응답객체에 추가 
      
